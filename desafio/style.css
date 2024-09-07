@@ -1,0 +1,45 @@
+body {
+  background: rgb(150, 145, 129);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main {
+  background: white;
+  width: 50%;
+  height: auto;
+  border-radius: 24px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input {
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+}
+input#button {
+  background: rgb(1, 90, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+input#button:hover {
+  opacity: 0.9;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  .inputs-entrada {
+    text-align: center;
+  }
+  input {
+   margin-top: 0.5em;
+  }
+}
