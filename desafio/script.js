@@ -40,7 +40,7 @@ let animais = [
   { especie: "gazela", tamanho: 2, bioma: "savana" },
   { especie: "hipopotamo", tamanho: 4, bioma: "savana ou rio" },
 ];
-function infosinternas(idAnimal, numberanimal) {
+function infosinternas(idAnimal, numberanimais) {
   let nomeAnimais = idAnimal.value.trim().toLowerCase();
   let animalexistente = animais.find(
     (animal) => animal.especie.toLowerCase() === nomeAnimais
