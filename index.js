@@ -127,4 +127,17 @@ function verificar() {
   } else {
     res.innerHTML = recintosViaveis.join("<br>");
   }
+  res.style.display = 'block'
 }
+function limparRes() {
+  if (res) {
+    res.innerHTML = ''; 
+  }
+}
+window.addEventListener('click', function(event) {
+  if (event.target === idAnimal || event.target === numberanimais) {
+    limparRes();
+    res.style.display = 'none'
+
+  }
+});

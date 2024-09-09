@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   background: rgb(150, 145, 129);
   font-family: "Poppins", sans-serif;
@@ -9,7 +11,7 @@ body {
 }
 main {
   background: white;
-  width: 50%;
+  width: 35%;
   height: auto;
   border-radius: 24px;
   padding: 1em;
@@ -19,27 +21,58 @@ main {
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-input {
+.inputs-entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin: 0 auto;
+}
+.inputs-entrada input {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
+  margin: 0.5em 0;
   padding: 0.5em 1.5em;
 }
-input#button {
+.button_verificar {
   background: rgb(1, 90, 1);
   color: white;
   border: none;
   cursor: pointer;
 }
-input#button:hover {
+.button_verificar:hover {
   opacity: 0.9;
+  border: 1px solid black;
+}
+.respostas__script {
+  width: 70%;
+  padding: 1em;
+  text-align: center;
+  margin: 1em auto;
+  display: none;
+}
+@media (max-width: 1123px) {
+  main {
+    min-width: 50%;
+  }
+}
+@media (max-width: 791px) {
+  main {
+    min-width: 80%;
+  }
 }
 @media (max-width: 500px) {
-  header h1 {
+  header .titulo {
+    text-align: center;
     font-size: 1.5em;
   }
-  .inputs-entrada {
-    text-align: center;
+  .respostas__script{
+    padding: 1em 0;
+    width: 100%;
   }
-  input {
-   margin-top: 0.5em;
+  .inputs-entrada input {
+    width: 80%;
+    margin: 0 auto;
   }
 }
