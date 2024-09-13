@@ -41,7 +41,7 @@ let animais = [
   { especie: "crocodilo", tamanho: 3, bioma: "rio" },
   { especie: "macaco", tamanho: 1, bioma: "savana ou floresta" },
   { especie: "gazela", tamanho: 2, bioma: "savana" },
-  { especie: "hipopotamo", tamanho: 4, bioma: "savana ou rio" },
+  { especie: "hipopótamo", tamanho: 4, bioma: "savana ou rio" },
 ];
 
 function infosinternas(idAnimal, numberanimais) {
@@ -52,6 +52,9 @@ function infosinternas(idAnimal, numberanimais) {
   }
   if (nomeAnimais === "leao") {
     nomeAnimais = nomeAnimais.replace(/a/g, "ã");
+  }
+  if (nomeAnimais === "hipopotamo") {
+    nomeAnimais = nomeAnimais.replace(/ot/g, "ót");
   }
   let animalexistente = animais.find(
     (animal) => animal.especie.toLowerCase() === nomeAnimais
@@ -107,7 +110,7 @@ function verificarRecintos(animal, quantidade) {
         return quantidade > 1;
       }
 
-      if (animal.especie === "hipopotamo") {
+      if (animal.especie === "hipopótamo") {
         if (recinto.bioma !== "savana e rio") return false;
       }
       return true;
